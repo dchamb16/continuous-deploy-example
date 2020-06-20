@@ -3,18 +3,20 @@ from flask import jsonify
 
 app = Flask(__name__)
 
+
 @app.route('/')
 def hello():
     return 'Hello World'
 
+
 @app.route('/name/<value>')
 def name(value):
-    val = {'value': value}
-    return jsonify(val)
+    return f'Hello {value}! I hope you are having a wonderful day!'
+
 
 @app.route('/bob')
 def bob():
-    val = {'value':'bob'}
+    val = {'value': 'bob'}
     return jsonify(val)
 
 
