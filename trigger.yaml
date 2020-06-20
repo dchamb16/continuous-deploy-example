@@ -1,0 +1,8 @@
+name: my-pr-trigger
+description: "Trigger on any PR targeting master"
+github: 
+	owner: GoogleCloudPlatform
+	name: cloud-builders
+	pull_request:
+		branch: master
+filename: cloudbuild.yaml
